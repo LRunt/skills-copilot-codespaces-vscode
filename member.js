@@ -7,4 +7,5 @@ function skillMember(){
         text += "<li>" + member[i] + "</li>";
     }
     listMember.innerHTML = text;
+    console.log(member);
 }
