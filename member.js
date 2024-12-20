@@ -1,11 +1,16 @@
 function skillMember(){
-    var member = ['Ketua', 'Wakil Ketua', 'Sekretaris', 'Bendahara', 'Anggota'];
-    var listMember = document.getElementById("listMember");
-    var i = 0;
-    var text = "";
-    for (i = 0; i < member.length; i++){
-        text += "<li>" + member[i] + "</li>";
+    var member = {
+        name: 'Jone',
+        age: 30,
+        skills: ['JavaScript', 'React', 'Node'],
+        showName: function(){
+            console.log(this.name);
+        },
+        showSkills: function(){
+            this.skills.forEach(function(skill){
+                console.log(skill);
+            });
+        }
     }
-    listMember.innerHTML = text;
-    console.log(member);
+    return member;
 }
